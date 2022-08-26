@@ -3,7 +3,7 @@
 body {
     font-family: "Karla", sans-serif;
     background-color: #fff;
-    min-height: 90vh;
+    min-height: 50vh;
 }
 
 .brand-wrapper {
@@ -35,7 +35,7 @@ body {
     }
 
     &-wrapper {
-        width: 300px;
+        width: 500px;
         max-width: 100%;
         padding-top: 24px;
         padding-bottom: 24px;
@@ -85,7 +85,7 @@ body {
             font-size: 14px;
             text-decoration: underline;
             display: inline-block;
-            margin-bottom: 54px;
+            margin-bottom: 20px;
 
             @media (max-width: 575px) {
                 margin-bottom: 16px;

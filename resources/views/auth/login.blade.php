@@ -7,31 +7,31 @@
                     <img src="{{ asset('/images/logo.svg') }}" alt="logo" class="logo">
                 </div>
                 <div class="login-wrapper my-auto">
-                <h1 class="login-title">Log in</h1>
-                <form method="POST" action="{{ route('login') }}">
-                    @csrf
-                    <div class="form-group mb-4">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="masukan email valid">
-                        @error('email') 
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
-                    </div>
-                    <div class="form-group mb-4">
-                        <label for="password">Kata sandi</label>
-                        <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" placeholder="masukan kata sandi">
-                        @error('password') 
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
-                    </div>
-                    <input name="login" id="login" class="btn btn-block login-btn" type="submit" value="Login">
-                </form>
-                <a href="{{ route('password.request') }}" class="forgot-password-link">Lupa kata sandi?</a>
-                <p class="login-wrapper-footer-text">Belum punya akun? <a href="{{ route('register') }}" class="text-reset">Register disini</a></p>
+                    <p class="h3 fw-bolder mb-4">Log in</p>
+                    <form method="POST" action="{{ route('login') }}">
+                        @csrf
+                        <div class="form-group mb-4">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="masukan email valid">
+                            @error('email') 
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="form-group mb-2">
+                            <label for="password">Kata sandi</label>
+                            <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" placeholder="masukan kata sandi">
+                            @error('password') 
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <input name="login" id="login" class="btn btn-block login-btn" type="submit" value="Login">
+                    </form>
+                    <a href="{{ route('password.request') }}" class="forgot-password-link">Lupa kata sandi?</a>
+                    <p class="login-wrapper-footer-text">Belum punya akun? <a href="{{ route('register') }}" class="text-reset">Register disini</a></p>
                 </div>
             </div>
             <div class="col-sm-6 px-0 d-none d-sm-block">
